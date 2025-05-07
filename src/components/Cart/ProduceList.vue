@@ -13,7 +13,7 @@
 
 <script lang="ts" setup>
 import Cart from "./Cart.vue";
-import { useCartStore } from "../store/modules/cartStore";
+import { useCartStore } from "../../store/modules/cartStore";
 
 const cartStore = useCartStore();
 </script>

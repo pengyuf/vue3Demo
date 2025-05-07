@@ -24,10 +24,15 @@
     </div>
     <div>
       <h1>todo</h1>
-      <TodoList/>
+      <TodoList />
     </div>
     <div>
-      <ProduceList/>
+      <ProduceList />
+    </div>
+    <div>
+      <h1>事件总线</h1>
+      <PushCmp/>
+      <SubCmp/>
     </div>
   </div>
 </template>
@@ -42,7 +47,9 @@ import Child from "./components/Child.vue";
 import MySlot from "./components/MySlot.vue";
 import MyModel from "./components/MyModel.vue";
 import TodoList from "./components/TodoList.vue";
-import ProduceList from "./components/ProduceList.vue";
+import ProduceList from "./components/Cart/ProduceList.vue";
+import PushCmp from "./components/EventBus/PushCmp.vue";
+import SubCmp from "./components/EventBus/subCmp.vue";
 import { useCounter } from "./store/modules/counter";
 import { storeToRefs } from "pinia";
 import { useToRefs } from "./hooks/testToRefs";
